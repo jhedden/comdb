@@ -27,11 +27,6 @@ PIP installation
 pip install git+https://github.com/jhedden/comdb.git
 ```
 
-Development
-```
-git clone https://github.com/jhedden/comdb.git
-pip install -e comdb
-```
 
 Docker
 ```
@@ -39,4 +34,17 @@ git clone https://github.com/jhedden/comdb.git
 cd comdb
 docker build . -t comdb
 docker run comdb --env APIKEY=<omdb api key> --env MOVIE=<movie title>
+```
+
+# Testing and Development
+
+Editable PIP installation
+```
+git clone https://github.com/jhedden/comdb.git
+pip install -e comdb
+```
+
+(Single test case needs better coverage)
+```
+make test
 ```

@@ -9,7 +9,7 @@ clean:
 	find . -name '*~'find -exec rm -f {} +
 
 test:
-	tox
+	pytest
 
 sdist:
 	python setup.py sdist
