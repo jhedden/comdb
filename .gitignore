@@ -1,0 +1,9 @@
+*.egg-info
+*.py[cod]
+.eggs/
+.env
+__pycache__
+build/
+ChangeLog
+dist/
+venv/
